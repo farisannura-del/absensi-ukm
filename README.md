@@ -1,58 +1,270 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎨 Sistem Absensi UKM Seni & Budaya
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem Absensi UKM Seni & Budaya merupakan aplikasi berbasis web yang dikembangkan menggunakan **Laravel 12** untuk mempermudah proses pengelolaan data anggota dan pencatatan absensi secara digital.
 
-## About Laravel
+Aplikasi memiliki dua hak akses yaitu **Admin** dan **User**. Admin dapat mengelola anggota, melihat data absensi, serta melakukan export laporan ke PDF. User dapat login menggunakan Google dan melakukan absensi kehadiran.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# 👨‍💻 Identitas Mahasiswa
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Nama** : Faris An Nura
 
-## Learning Laravel
+**NIM** : 240170227
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# ✨ Fitur Aplikasi
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- ✅ Login
+- ✅ Login menggunakan Google (Laravel Socialite)
+- ✅ Dashboard Admin
+- ✅ Dashboard User
+- ✅ CRUD Data Anggota
+- ✅ Sistem Absensi Anggota
+- ✅ Export Data Absensi ke PDF
+- ✅ REST API
+- ✅ Responsive Desktop
+- ✅ Responsive Mobile
+- ✅ Pemisahan Hak Akses Admin & User
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+# 🛠️ Teknologi yang Digunakan
+
+- Laravel 12
+- PHP 8.x
+- MySQL
+- Tailwind CSS
+- Laravel Breeze
+- Laravel Socialite
+- DomPDF
+- REST API
+- Git
+- GitHub
+
+---
+
+# 🚀 Cara Instalasi
+
+## 1. Clone Repository
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/farisannura-del/absensi-ukm.git
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## 2. Masuk ke Folder Project
 
-## Contributing
+```bash
+cd absensi-ukm
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 3. Install Dependency
 
-## Code of Conduct
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 4. Install Node Modules
 
-## Security Vulnerabilities
+```bash
+npm install
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 5. Copy File Environment
 
-## License
+```bash
+cp .env.example .env
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 6. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+## 7. Atur Database
+
+Buat database MySQL kemudian sesuaikan konfigurasi database pada file `.env`.
+
+Contoh:
+
+```env
+DB_DATABASE=absensi_ukm
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+## 8. Jalankan Migrasi
+
+```bash
+php artisan migrate
+```
+
+## 9. Jalankan Aplikasi
+
+```bash
+php artisan serve
+```
+
+Aplikasi dapat diakses pada:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+# 👤 Akun Demo
+
+## Admin
+
+Login menggunakan akun Admin yang telah dibuat pada database.
+
+Contoh:
+
+Email
+
+```
+admin@gmail.com
+```
+
+Password
+
+```
+password
+```
+
+## User
+
+Login menggunakan akun Google yang telah didaftarkan pada sistem.
+
+---
+
+# 📡 REST API
+
+## Endpoint
+
+```
+GET /api/attendances
+```
+
+## Contoh URL
+
+```
+http://127.0.0.1:8000/api/attendances
+```
+
+## Contoh Response
+
+```json
+{
+  "success": true,
+  "message": "Data absensi berhasil diambil.",
+  "data": [
+    {
+      "id": 1,
+      "tanggal": "2026-07-23",
+      "jam_masuk": "20:23:52",
+      "status": "Hadir"
+    }
+  ]
+}
+```
+
+REST API telah diuji menggunakan Postman.
+
+---
+
+# 📸 Dokumentasi Aplikasi
+
+## 1. Halaman Login
+
+![Login](screenshots/login.png)
+
+---
+
+## 2. Login Google
+
+![Google Login](screenshots/google-login.png)
+
+---
+
+## 3. Dashboard Admin
+
+![Dashboard Admin](screenshots/dashboard-admin.png)
+
+---
+
+## 4. Dashboard User
+
+![Dashboard User](screenshots/dashboard-user.png)
+
+---
+
+## 5. CRUD Data Anggota
+
+![CRUD](screenshots/crud.png)
+
+---
+
+## 6. REST API (Postman)
+
+![REST API](screenshots/api-postman.png)
+
+---
+
+## 7. Hak Akses Admin
+
+![Hak Akses Admin](screenshots/admin.png)
+
+---
+
+## 8. Hak Akses User
+
+![Hak Akses User](screenshots/user.png)
+
+---
+
+## 9. Responsive Desktop
+
+![Responsive Desktop](screenshots/desktop.png)
+
+---
+
+## 10. Responsive Mobile
+
+![Responsive Mobile](screenshots/mobile.png)
+
+---
+
+## 11. Export PDF
+
+![Export PDF](screenshots/pdf.png)
+
+---
+
+# 📂 Struktur Project
+
+```
+app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+storage/
+```
+
+---
+
+# 🔗 Repository GitHub
+
+https://github.com/farisannura-del/absensi-ukm
+
+---
+
+# 📄 Lisensi
+
+Project ini dibuat untuk memenuhi tugas mata kuliah **Pemrograman Web / Framework Laravel** dan hanya digunakan untuk keperluan akademik.
