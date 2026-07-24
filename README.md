@@ -180,67 +180,87 @@ REST API telah diuji menggunakan Postman.
 
 ## 1. Halaman Login
 
-![Login](screenshots/login.png)
+<img width="1917" height="1078" alt="login" src="https://github.com/user-attachments/assets/8003d9f6-fbde-4275-950a-907687c03861" />
+
 
 ---
 
 ## 2. Login Google
 
-![Google Login](screenshots/google-login.png)
+<img width="1917" height="1076" alt="google-login" src="https://github.com/user-attachments/assets/50dad1e9-1a25-466f-b379-e9fbe1906bff" />
+
 
 ---
 
 ## 3. Dashboard Admin
 
-![Dashboard Admin](screenshots/dashboard-admin.png)
+<img width="1917" height="1078" alt="dashboard-admin" src="https://github.com/user-attachments/assets/2353503f-00ce-427f-8374-363990baa4f6" />
+
 
 ---
 
 ## 4. Dashboard User
 
-![Dashboard User](screenshots/dashboard-user.png)
+<img width="1917" height="1078" alt="dashboard-user" src="https://github.com/user-attachments/assets/f1cd826b-1924-4b8a-a243-6e00d38becc8" />
+
 
 ---
 
 ## 5. CRUD Data Anggota
 
-![CRUD](screenshots/crud.png)
+<img width="1917" height="1078" alt="crud-tambah" src="https://github.com/user-attachments/assets/d1031988-3c1b-42f6-8b40-45eb5f975c29" />
+
+<img width="1917" height="1078" alt="crud-read" src="https://github.com/user-attachments/assets/d23ce093-f086-41ea-86b0-523b5f1ed42d" />
+
+<img width="1917" height="1078" alt="crud-edit" src="https://github.com/user-attachments/assets/d5b7c5ac-eadb-413c-9812-d3aa85dfeec1" />
+
+<img width="1917" height="1078" alt="crud-delete" src="https://github.com/user-attachments/assets/493d1a7d-9c5a-4eb5-93e7-89415afd0431" />
+
+
 
 ---
 
 ## 6. REST API (Postman)
 
-![REST API](screenshots/api-postman.png)
+<img width="1912" height="1071" alt="api-postman" src="https://github.com/user-attachments/assets/9fe6af2e-7e7e-4824-a4af-8f0510b5ad66" />
+
 
 ---
 
 ## 7. Hak Akses Admin
 
-![Hak Akses Admin](screenshots/admin.png)
+<img width="1917" height="1078" alt="admin" src="https://github.com/user-attachments/assets/f0743ac2-a492-4967-8ae6-bbd2377f2b1a" />
+
 
 ---
 
 ## 8. Hak Akses User
 
-![Hak Akses User](screenshots/user.png)
+<img width="1917" height="1078" alt="user" src="https://github.com/user-attachments/assets/b56d5706-b6ba-46a5-b287-d498f8243995" />
+
 
 ---
 
 ## 9. Responsive Desktop
 
-![Responsive Desktop](screenshots/desktop.png)
+<img width="1917" height="1078" alt="desktop" src="https://github.com/user-attachments/assets/65330f6c-ec85-47ba-91e0-3c0d45898192" />
+
 
 ---
 
 ## 10. Responsive Mobile
 
-![Responsive Mobile](screenshots/mobile.png)
+<img width="1917" height="1078" alt="mobile" src="https://github.com/user-attachments/assets/0af99205-827a-47d4-826f-5168ad19515f" />
+
 
 ---
 
 ## 11. Export PDF
 
-![Export PDF](screenshots/pdf.png)
+<img width="1917" height="1078" alt="pdf" src="https://github.com/user-attachments/assets/e7a95148-c369-4626-be67-8aab323c4a35" />
+
+<img width="1917" height="1078" alt="hasil-pdf" src="https://github.com/user-attachments/assets/9ac66144-e18c-41d3-b6a4-73c8aad9bdb0" />
+
 
 ---
 
