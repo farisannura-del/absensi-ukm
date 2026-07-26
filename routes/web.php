@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\DashboardController;
@@ -93,6 +94,32 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])
         ->name('profile.destroy');
 
+});
+
+/*
+|--------------------------------------------------------------------------
+| Route Sementara Membuat Admin
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/create-admin', function () {
+
+    User::updateOrCreate(
+        [
+            'email' => 'admin@ukmseni.com',
+        ],
+        [
+            'name' => 'Administrator',
+            'nim' => 'ADMIN001',
+            'bidang' => 'Kesekretariatan',
+            'google_id' => null,
+            'avatar' => null,
+            'role' => 'admin',
+            'password' => bcrypt('admin123'),
+        ]
+    );
+
+    return 'Admin berhasil dibuat!';
 });
 
 require __DIR__.'/auth.php';
